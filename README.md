@@ -2,7 +2,7 @@
 
 PDF結合ができるcatコマンド
 
-![ccat_icon.svg](./img/ccat_icon.svg)
+<img width="20" alt="ccat_icon.svg" src="./img/ccat_icon.svg">
 
 ## Description
 
