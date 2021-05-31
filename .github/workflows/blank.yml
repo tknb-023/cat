@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: coveralls
+        uses: coverallsapp/github-action@v1.0.1
+        with:
+            github-token: ${{ secrets.github_token }}
