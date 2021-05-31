@@ -1,5 +1,11 @@
 # ccat
 
+![CI](https://github.com/tknb-023/ccat/workflows/build/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/tknb-023/ccat/badge.svg?branch=main)](https://coveralls.io/github/tknb-023/ccat?branch=main)
+[![License](https://img.shields.io/github/license/tknb-023/ccat)](https://github.com/tknb-023/ccat/blob/main/LICENSE)
+<!-- [![codebeat badge](https://codebeat.co/badges/ad4259ff-15bc-48e6-b5a5-e23fda711d25)](https://codebeat.co/projects/github-com-tamada-wildcat-main) -->
+
+
 catコマンドの機能拡張
 
 <img width="100" alt="ccat_icon.svg" src="./img/ccat_icon.svg">
@@ -23,3 +29,6 @@ OPTIONS
 ARGUMENTS
     FILEs...                中身の確認または結合を行うファイル．
 ```
+## icon
+<img width="100" alt="ccat_icon.svg" src="./img/ccat_icon.svg">
+アイコンは www.flaticon.com で公開されている画像を用いている．
