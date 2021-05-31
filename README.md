@@ -1,5 +1,13 @@
 # ccat
 
+![build](https://github.com/tamada/wildcat/workflows/build/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/tamada/wildcat/badge.svg?branch=main)](https://coveralls.io/github/tamada/wildcat?branch=main)
+[![codebeat badge](https://codebeat.co/badges/ad4259ff-15bc-48e6-b5a5-e23fda711d25)](https://codebeat.co/projects/github-com-tamada-wildcat-main)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tamada/wildcat)](https://goreportcard.com/report/github.com/tamada/wildcat)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=spdx)](https://github.com/tknb-023/ccat/blob/main/LICENSE)
+
+
 catコマンドの機能拡張
 
 <img width="100" alt="ccat_icon.svg" src="./img/ccat_icon.svg">
