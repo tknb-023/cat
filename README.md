@@ -2,8 +2,9 @@
 
 [![CI](https://github.com/tknb-023/ccat/actions/workflows/blank.yml/badge.svg)](https://github.com/tknb-023/ccat/actions/workflows/blank.yml)
 [![Coverage Status](https://coveralls.io/repos/github/tknb-023/ccat/badge.svg?branch=main)](https://coveralls.io/github/tknb-023/ccat?branch=main)
+[![codebeat badge](https://codebeat.co/badges/7baf5730-be98-43c2-b642-49e7887af865)](https://codebeat.co/projects/github-com-tknb-023-ccat-main)
 [![License](https://img.shields.io/github/license/tknb-023/ccat)](https://github.com/tknb-023/ccat/blob/main/LICENSE)
-<!-- [![codebeat badge](https://codebeat.co/badges/ad4259ff-15bc-48e6-b5a5-e23fda711d25)](https://codebeat.co/projects/github-com-tamada-wildcat-main) -->
+
 
 
 catコマンドの機能拡張
