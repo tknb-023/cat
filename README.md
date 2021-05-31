@@ -23,3 +23,6 @@ OPTIONS
 ARGUMENTS
     FILEs...                中身の確認または結合を行うファイル．
 ```
+## icon
+<img width="100" alt="ccat_icon.svg" src="./img/ccat_icon.svg">
+アイコンは www.flaticon.com で公開されている画像を用いている．
