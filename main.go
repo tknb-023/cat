@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 )
@@ -20,22 +21,43 @@ ARGUMENTS
 	FILEs...                中身の確認または結合を行うファイル．`, programName)
 }
 
-func stdin() {
+func stin() {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	// 標準入力から受け取ったテキストを出力
 	for scanner.Scan() {
 		fmt.Fprintf(os.Stdout, "%s\n", scanner.Text())
 	}
+}
 
-	// // エラー処理
-	// if err := scanner.Err(); err != nil {
-	//     fmt.Fprintf(os.Stderr, "read error :%v", err)
-	// }
+func stout(filename string) {
+	file, err := os.Open(filename)
+	if err != nil {
+		panic(err)
+	}
+	rd := bufio.NewReader(file)
+	for {
+		s, err := rd.ReadString('\n')
+		if err == io.EOF {
+			break
+		}
+		fmt.Print(s)
+	}
+	file.Close()
+}
+
+func stout_loop(filename []string) {
+	for _, file := range filename {
+		stout(file)
+	}
 }
 
 func perform(opts *options) int {
-	stdin()
+	if len(opts.args) < 1 {
+		stin()
+	} else {
+		stout_loop(opts.args)
+	}
 	return 0
 }
 
