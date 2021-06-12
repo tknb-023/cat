@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 )
@@ -19,9 +21,58 @@ ARGUMENTS
 	FILEs...                中身の確認または結合を行うファイル．`, programName)
 }
 
-func goMain(args []string) int {
-	fmt.Println(helpMessage(args[0]))
+func stin() {
+	scanner := bufio.NewScanner(os.Stdin)
+
+	// 標準入力から受け取ったテキストを出力
+	for scanner.Scan() {
+		fmt.Fprintf(os.Stdout, "%s\n", scanner.Text())
+	}
+}
+
+func stout(filename string) {
+	file, err := os.Open(filename)
+	if err != nil {
+		panic(err)
+	}
+	rd := bufio.NewReader(file)
+	for {
+		s, err := rd.ReadString('\n')
+		if err == io.EOF {
+			break
+		}
+		fmt.Print(s)
+	}
+	file.Close()
+}
+
+func stout_loop(filename []string) {
+	for _, file := range filename {
+		stout(file)
+	}
+}
+
+func perform(opts *options) int {
+	if len(opts.args) < 1 {
+		stin()
+	} else {
+		stout_loop(opts.args)
+	}
 	return 0
+}
+
+func goMain(args []string) int {
+	opts, err := parseArgs(args)
+	if err != nil {
+		fmt.Printf("parsing args fail: %s\n", err.Error())
+		fmt.Println(helpMessage(filepath.Base(args[0])))
+		return 1
+	}
+	if opts.help {
+		fmt.Println(helpMessage(filepath.Base(args[0])))
+		return 0
+	}
+	return perform(opts)
 }
 
 func main() {

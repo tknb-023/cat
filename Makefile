@@ -25,7 +25,7 @@ dist: all
 	@$(call __create_dist,linux,amd64,)
 
 build: main.go
-	go build -o $(NAME) -v main.go
+	go build -o $(NAME) -v main.go args.go
 
 clean:
 	@rm -f ccat *~
