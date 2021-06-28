@@ -74,10 +74,16 @@ func TestStdin(t *testing.T) {
 // 	//    31 つとめよ　わがせ、つつがなく。
 // }
 
+func Example_ccat7() {
+	goMain([]string{"ccat", "./testdata/"})
+	// Output:
+	// ccat: ./testdata/ : Is a directory
+}
+
 func Example_ccat6() {
 	goMain([]string{"ccat", "./testdata/hoge.txt", "-n"})
 	// Output:
-	// cat: ./testdata/hoge.txt : No such file or directory
+	// ccat: ./testdata/hoge.txt : No such file or directory
 }
 
 func Example_ccat5() {
