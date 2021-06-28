@@ -15,6 +15,7 @@ type options struct {
 	args     []string
 }
 
+// オプションが指定された場合のフラグ立て
 func parseArgs(args []string) (*options, error) {
 	opts := &options{}
 	flags := flag.NewFlagSet("ccat", flag.ContinueOnError)
