@@ -1,0 +1,15 @@
+[submodule "themes/dimension"]
+	path = themes/dimension
+	url = https://github.com/your-identity/hugo-theme-dimension.git
+[submodule "themes/Elate"]
+	path = themes/Elate
+	url = https://github.com/saey55/hugo-elate-theme
+[submodule "themes/cayman-hugo-theme"]
+	path = themes/cayman-hugo-theme
+	url = https://github.com/zwbetz-gh/cayman-hugo-theme.git
+[submodule "themes/forty"]
+	path = themes/forty
+	url = https://github.com/MarcusVirg/forty
+[submodule "themes/hugo-icon"]
+	path = themes/hugo-icon
+	url = https://github.com/SteveLane/hugo-icon.git

@@ -1,0 +1,25 @@
+baseURL = "https://tknb-023.github.io/ccat"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "CCAT"
+enableEmoji = true
+theme = "dimension"
+# googleAnalytics = "UA-62401730-14"
+
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
+
+[params]
+    project_name = "ccat"
+    project_logo = "../img/ccat_icon.svg"
+    project_tagline = "catコマンドの機能拡張"
+    dateFormat = "2006-01-02"
+    katex = true
+
+    footer = "[![GitHub](https://img.shields.io/badge/GitHub-tknb--023%2Fccat-blue?logo=github)](https://github.com/tknb-023/ccat) Made with [Hugo](https://gohugo.io/). Theme by [dimension](https://themes.gohugo.io/themes/hugo-theme-dimension/). Deployed to [GitHub Pages](https://pages.github.com/)."
+
+[menu]
+    [[menu.nav]]
+        name = ":house: Home"
+        url = "/"
+        weight = 10

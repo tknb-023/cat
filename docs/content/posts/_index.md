@@ -1,4 +1,6 @@
-# ccat
+---
+title: "CCAT"
+---
 
 [![CI](https://github.com/tknb-023/ccat/actions/workflows/blank.yml/badge.svg)](https://github.com/tknb-023/ccat/actions/workflows/blank.yml)
 [![Coverage Status](https://coveralls.io/repos/github/tknb-023/ccat/badge.svg?branch=main)](https://coveralls.io/github/tknb-023/ccat?branch=main)
@@ -31,3 +33,4 @@ ARGUMENTS
 <img width="100" alt="ccat_icon.svg" src="./img/ccat_icon.svg">
 ![Icon](https://raw.githubusercontent.com/tknb-023/ccat/main/docs/static/img/ccat_icon.svg)
 アイコンは www.flaticon.com で公開されている画像を用いている．
+
