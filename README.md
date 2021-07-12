@@ -29,5 +29,5 @@ ARGUMENTS
     FILEs...                中身の確認または結合を行うファイル．
 ```
 ## icon
-<img width="100" alt="ccat_icon.svg" src="./static/images/ccat_icon.svg">
+<img width="100" alt="ccat_icon.svg" src="./docs/static/images/ccat_icon.svg">
 アイコンは www.flaticon.com で公開されている画像を用いている．
