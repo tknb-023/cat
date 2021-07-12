@@ -1,0 +1,4 @@
+baseURL = "https://tknb-023.github.io/ccat"
+languageCode = "en-us"
+title = "CCAT"
+theme = "dimension"
