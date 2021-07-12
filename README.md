@@ -7,7 +7,6 @@
 [![Docker](https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.0-green?logo=docker)](https://hub.docker.com/r/saku2975/ccat)
 [![DOI](https://zenodo.org/badge/370349891.svg)](https://zenodo.org/badge/latestdoi/370349891)
 
-
 catコマンドの機能拡張
 
 ## Description
@@ -30,5 +29,5 @@ ARGUMENTS
     FILEs...                中身の確認または結合を行うファイル．
 ```
 ## icon
-<img width="100" alt="ccat_icon.svg" src="../images/ccat_icon.svg">
+<img width="100" alt="ccat_icon.svg" src="./static/images/ccat_icon.svg">
 アイコンは www.flaticon.com で公開されている画像を用いている．
