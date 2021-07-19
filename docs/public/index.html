@@ -53,7 +53,9 @@
                             
                                 
                                     
-                                        <li><a href="https://tknb-023.github.io/ccat/installation/">Installation</a></li>
+                                        <li>
+                                            <a href="#installation">Installation</a>
+                                        </li>
                                     
                                 
                             
@@ -81,9 +83,11 @@
                                     <h2 id="ccat">ccat</h2>
 <p><a href="https://github.com/tknb-023/ccat/actions/workflows/blank.yml"><img src="https://github.com/tknb-023/ccat/actions/workflows/blank.yml/badge.svg" alt="CI"></a>
 <a href="https://coveralls.io/github/tknb-023/ccat?branch=main"><img src="https://coveralls.io/repos/github/tknb-023/ccat/badge.svg?branch=main" alt="Coverage Status"></a>
-<a href="https://codebeat.co/projects/github-com-tknb-023-ccat-main"><img src="https://codebeat.co/badges/7baf5730-be98-43c2-b642-49e7887af865" alt="codebeat badge"></a>
-<a href="https://github.com/tknb-023/ccat/blob/main/LICENSE"><img src="https://img.shields.io/github/license/tknb-023/ccat" alt="License"></a>
-<a href="https://hub.docker.com/r/saku2975/ccat"><img src="https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.0-green?logo=docker" alt="Docker"></a></p>
+<a href="https://codebeat.co/projects/github-com-tknb-023-ccat-main"><img src="https://codebeat.co/badges/7baf5730-be98-43c2-b642-49e7887af865" alt="codebeat badge"></a></p>
+<p><a href="https://github.com/tknb-023/ccat/blob/main/LICENSE"><img src="https://img.shields.io/github/license/tknb-023/ccat" alt="License"></a>
+<a href="https://github.com/tknb-023/ccat/releases/tag/v0.9.4"><img src="https://img.shields.io/badge/Version-0.9.4-orange" alt="Version"></a>
+<a href="https://zenodo.org/badge/latestdoi/370349891"><img src="https://zenodo.org/badge/370349891.svg" alt="DOI"></a></p>
+<p><a href="https://hub.docker.com/r/saku2975/ccat"><img src="https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.0-green?logo=docker" alt="Docker"></a></p>
 <h2 id="description">Description</h2>
 <p>catコマンドではファイルの結合が可能だが，結合の際はテキスト全てを結合する．
 しかし，csvファイルなどで先頭行にカラム名がついている場合，2つ目以降のファイルではカラム名は必要ない．
@@ -98,6 +102,21 @@
                     
                         
                             
+                                <article id="installation">
+                                    <h2 class="major">Installation</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    <h2 id="homebrew">Homebrew</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew tap tknb-023/brew
+brew install ccat
+</code></pre></div><h2 id="go-lang">Go lang</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go get github.com/tamada/scv
+</code></pre></div><h2 id="compiling-yourself">Compiling yourself</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/tknb-023/ccat.git
+cd ccat
+make
+</code></pre></div>
+                                </article>
+                            
                         
                     
                         
@@ -105,7 +124,8 @@
                                 <article id="usage">
                                     <h2 class="major">Usage</h2>
                                     <span class="image main"><img src="" alt="" /></span>
-                                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ccat <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>FILEs...<span style="color:#f92672">]</span>
+                                    <h2 id="cli-help-message">CLI help message</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ccat <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>FILEs...<span style="color:#f92672">]</span>
 OPTIONS
     -n, --number            行番号を表示する．
     -b, --number-nonblank   行番号を表示する．ただし空白行には付けない．
@@ -114,6 +134,23 @@ OPTIONS
     -h, --help              このメッセージを出力します．
 ARGUMENTS
     FILEs...                中身の確認または結合を行うファイル．
+</code></pre></div><h2 id="examples">Examples</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ ccat testdata/csv1.csv                     
+ID,Name,Mail
+123456,神山太郎,123456@abc.com
+234567,京産花子,234567@abc.com
+345678,京都次郎,345678@abc.com
+$ ccat testdata/csv2.csv -n
+  <span style="color:#ae81ff">1</span> ID,Name,Mail
+  <span style="color:#ae81ff">2</span> 456789,神山三郎,456789@abc.com
+  <span style="color:#ae81ff">3</span> 567890,京産町子,567890@abc.com
+$ ccat testdata/csv1.csv testdata/csv2.csv -t 
+ID,Name,Mail
+123456,神山太郎,123456@abc.com
+234567,京産花子,234567@abc.com
+345678,京都次郎,345678@abc.com
+456789,神山三郎,456789@abc.com
+567890,京産町子,567890@abc.com
 </code></pre></div>
                                 </article>
                             
