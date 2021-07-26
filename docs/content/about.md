@@ -20,8 +20,19 @@ catコマンドではファイルの結合が可能だが，結合の際はテ�
 しかし，csvファイルなどで先頭行にカラム名がついている場合，2つ目以降のファイルではカラム名は必要ない．
 そこでこのソフトウェアではcatコマンドの機能の一部に加え，2つ目以降のファイルでは先頭行を無視する機能を加える．
 
+## Versions
+
+```1.0.1``` , ```latest```
+
+```1.0.0```
+
 ## License
 
 MIT License
 
 [![License](https://img.shields.io/github/license/tknb-023/ccat)](https://github.com/tknb-023/ccat/blob/main/LICENSE)
+
+### icon
+
+<img width="100" alt="ccat_icon.svg" src="./images/ccat_icon.svg">
+アイコンは www.flaticon.com で公開されている画像を用いている．
