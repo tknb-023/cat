@@ -36,3 +36,17 @@ ID,Name,Mail
 456789,神山三郎,456789@abc.com
 567890,京産町子,567890@abc.com
 ```
+
+### Docker
+
+[![Docker](https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.1-green?logo=docker)](https://hub.docker.com/r/saku2975/ccat)
+
+```sh
+docker run -it saku2975/ccat:latest [OPTIONS]
+```
+
+If `ccat` reads some files, `-v` option should be specified.
+
+```sh
+docker run -v $PWD:/home/ccat -it saku2975/ccat:latest [OPTIONS]  [FILEs...]
+```
