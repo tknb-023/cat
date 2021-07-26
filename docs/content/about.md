@@ -34,6 +34,6 @@ MIT License
 
 ### icon
 
-<img width="100" alt="ccat_icon.svg" src="./images/ccat_icon.svg">
+{{< figure src="./images/ccat_icon.svg" title="ccat_icon" class="center" width="100" >}}
 
 アイコンは www.flaticon.com で公開されている画像を用いている．
