@@ -8,7 +8,7 @@
 [![Version](https://img.shields.io/badge/Version-0.9.4-orange)](https://github.com/tknb-023/ccat/releases/tag/v0.9.4)
 [![DOI](https://zenodo.org/badge/370349891.svg)](https://zenodo.org/badge/latestdoi/370349891)
 
-[![Docker](https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.0-green?logo=docker)](https://hub.docker.com/r/saku2975/ccat)
+[![Docker](https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.1-green?logo=docker)](https://hub.docker.com/r/saku2975/ccat)
 
 catコマンドの機能拡張
 
@@ -82,7 +82,8 @@ make
 
 ### Version
 
-```1.0.0``` , ```latest```
+```1.0.1``` , ```latest```
+```1.0.0```
 
 ### License
 
