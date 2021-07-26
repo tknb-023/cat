@@ -168,7 +168,7 @@ ID,Name,Mail
 </code></pre></div><h3 id="docker">Docker</h3>
 <p><a href="https://hub.docker.com/r/saku2975/ccat"><img src="https://img.shields.io/badge/Docker-saku2975%2Fccat%3A1.0.1-green?logo=docker" alt="Docker"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker run -it saku2975/ccat:latest <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span>
-</code></pre></div><p>If <code>ccat</code> reads some files, <code>-v</code> option should be specified.</p>
+</code></pre></div><p>ファイルに対して使用する際は<code>-v</code>オプションを指定する必要があります．</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker run -v $PWD:/home/ccat -it saku2975/ccat:latest <span style="color:#f92672">[</span>OPTIONS<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>FILEs...<span style="color:#f92672">]</span>
 </code></pre></div>
                                 </article>
