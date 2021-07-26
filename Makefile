@@ -1,6 +1,6 @@
 GO := go
 NAME := ccat
-VERSION := 1.0.0
+VERSION := 1.0.1
 DIST := $(NAME)-$(VERSION)
 
 all: test build

@@ -1,6 +1,6 @@
 FROM alpine:3.10.1
 
-ARG version=1.0.0
+ARG version=1.0.1
 
 LABEL maintainer="Takanobu Omura" \
       description="Extension of cat command"
@@ -8,7 +8,7 @@ LABEL maintainer="Takanobu Omura" \
 RUN    adduser -D ccat \
     && apk --no-cache add --update --virtual .builddeps curl tar \
 #    && curl -s -L -O https://github.com/tamada/ccat/realeases/download/v${version}/ccat-${version}_linux_amd64.tar.gz \
-    && curl -s -L -o ccat-${version}_linux_amd64.tar.gz https://www.dropbox.com/s/f6vvy8jpjfjtm6f/ccat-1.0.0_linux_amd64.tar.gz?dl=0 \
+    && curl -s -L -o ccat-${version}_linux_amd64.tar.gz https://www.dropbox.com/s/gu8kedqp7lfkdzo/ccat-1.0.1_linux_amd64.tar.gz?dl=0 \
     && tar xfz ccat-${version}_linux_amd64.tar.gz        \
     && mv ccat-${version} /opt                           \
     && ln -s /opt/ccat-${version} /opt/ccat               \
