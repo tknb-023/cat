@@ -20,7 +20,8 @@ Versions   1.0.1 , latest
   1.0.0
   License MIT License
 
-icon  ccat_icon   アイコンは www.flaticon.com で公開されている画像を用いている．</description>
+icon {{- $image := resources.Get &amp;ldquo;./images/ccat_icon.svg&amp;rdquo; -}} {{ $image.Resize &amp;ldquo;100x #916861&amp;rdquo; }}
+アイコンは www.flaticon.com で公開されている画像を用いている．</description>
     </item>
     
     <item>
