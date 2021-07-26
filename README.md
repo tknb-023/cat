@@ -80,6 +80,10 @@ make
 
 ## About
 
+### Version
+
+```1.0.0``` , ```latest```
+
 ### License
 
 MIT License
