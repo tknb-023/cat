@@ -1,9 +1,4 @@
 mode: count
-github.com/tknb-023/ccat/args.go:19.49,22.23 3 16
-github.com/tknb-023/ccat/args.go:23.2,28.42 6 16
-github.com/tknb-023/ccat/args.go:31.2,32.18 2 15
-github.com/tknb-023/ccat/args.go:22.23,22.60 1 0
-github.com/tknb-023/ccat/args.go:28.42,30.3 1 1
 github.com/tknb-023/ccat/ccat.go:10.51,11.34 1 31
 github.com/tknb-023/ccat/ccat.go:11.34,13.3 1 23
 github.com/tknb-023/ccat/ccat.go:13.8,15.3 1 8
@@ -46,3 +41,8 @@ github.com/tknb-023/ccat/main.go:44.2,44.22 1 6
 github.com/tknb-023/ccat/main.go:35.16,39.3 3 0
 github.com/tknb-023/ccat/main.go:40.15,43.3 2 2
 github.com/tknb-023/ccat/main.go:47.13,50.2 2 0
+github.com/tknb-023/ccat/args.go:19.49,22.23 3 16
+github.com/tknb-023/ccat/args.go:23.2,28.42 6 16
+github.com/tknb-023/ccat/args.go:31.2,32.18 2 15
+github.com/tknb-023/ccat/args.go:22.23,22.60 1 0
+github.com/tknb-023/ccat/args.go:28.42,30.3 1 1

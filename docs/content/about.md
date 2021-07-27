@@ -32,7 +32,7 @@ MIT License
 
 [![License](https://img.shields.io/github/license/tknb-023/ccat)](https://github.com/tknb-023/ccat/blob/main/LICENSE)
 
-### icon
+## icon
 
 {{< figure src="./images/ccat_icon.svg" title="ccat_icon" class="center" width="100" >}}
 
